@@ -11,7 +11,7 @@ local radius = differenceVector.Magnitude
 
 local angle = atan2(differenceVector.Y, differenceVector.X)
 
-local orbitPeriod = 27.3
+local orbitPeriod = 5 -- 작을수록 궤도가 잘 나타남. 공전주기를 적당히 낮추는게 좋음. 
 
 RunService.Heartbeat:Connect(function(deltaTime)
 	-- Polar coordinates 2D
